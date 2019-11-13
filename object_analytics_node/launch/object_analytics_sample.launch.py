@@ -28,7 +28,7 @@ def generate_launch_description():
             package='object_analytics_node', node_executable='object_analytics_node',
             arguments=['--tracking', '--localization'],
             remappings=[
-                ('/object_analytics/detected_objects', '/ros2_openvino_toolkit/detected_objects'),
+                ('/object_analytics/detected_objects', '/openvino_toolkit/object/detected_objects'),
                 ('/object_analytics/rgb', '/camera/color/image_raw'),
                 ('/object_analytics/pointcloud', '/camera/pointcloud')],
             output='screen'),
